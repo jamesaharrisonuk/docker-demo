@@ -1,6 +1,6 @@
 FROM node
 WORKDIR /app
 ADD . /app
-RUN npm install it && npm audit fix --force
+RUN npm install && npm audit fix --force
 EXPOSE 3000
 CMD npm start
